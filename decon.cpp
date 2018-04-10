@@ -1,5 +1,5 @@
-/*
 #include "Licensing.h"
+/*
 #include "DeconvolutionLauncher.h"
 #include "Callbacks.h"
 */
@@ -9,7 +9,7 @@
 #include <time.h>
 #include <iostream>
 
-//using namespace microvolution;
+using namespace microvolution;
 /*
 void iterationCallback(DeconvolutionCallbackStruct cbs, void* data)
 {
@@ -19,17 +19,16 @@ void iterationCallback(DeconvolutionCallbackStruct cbs, void* data)
 int main(int argc, char** argv)
 {
 	std::cout << "looking for license..." << std::endl;
-	return 0;
-	/*	
 	// Initialize license manager
 	// Only needed if changing the search path (defaults to cwd + dll path)
 	Licensing* lic = Licensing::GetInstance();
-	lic->SetPath("/afm01/home/uqocairn/project/decon-test");
+	lic->SetPath("/afm01/home/uqocairn/project/decon");
 	lic->CheckoutLicenses();
 
 	std::cout << "*** decon licence: " << (lic->HaveValidLicense("deconvolution") ? "true" : "false") << std::endl;
 	return 0;
 
+	/*
 	// Set all relevant parameters.
 	DeconParameters params;
 	params.nx = 512;
